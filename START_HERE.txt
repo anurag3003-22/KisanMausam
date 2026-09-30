@@ -1,0 +1,12 @@
+KISANMAUSAM - ONE CLICK START
+
+1. Extract this ZIP.
+2. Make sure Node.js LTS and Python 3.11+ are installed.
+3. Put your real API keys only in server\.env.
+4. Double-click START_KISANMAUSAM.bat.
+
+The launcher installs missing packages, builds the React/Vite frontend,
+starts FastAPI, waits for /api/health, and opens http://127.0.0.1:8000.
+
+If it stops with an error, KEEP THE WINDOW OPEN and read the last error lines.
+Do not close the KisanMausam Server window while using the app.

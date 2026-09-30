@@ -1,0 +1,223 @@
+{
+  "_note": "Short crop-specific lines added to a weather advisory. Prototype text: review with a KVK / agriculture expert before field use. Categories: rain, dry, wind, heat, cold, hail, good.",
+  "wheat": {
+    "rain": {
+      "en": "Drain excess water from the wheat field. Avoid fertilizer and irrigation before rain.",
+      "hi": "गेहूँ के खेत से फालतू पानी निकालें। बारिश से पहले खाद और सिंचाई न करें।"
+    },
+    "dry": {
+      "en": "Wheat needs water at crown root, tillering, flowering and grain filling. Irrigate if one of these stages is near.",
+      "hi": "गेहूँ को ताजमूल, कल्ले फूटने, फूल आने और दाना भरने की अवस्था में पानी चाहिए। इनमें से कोई अवस्था नज़दीक हो तो सिंचाई करें।"
+    },
+    "wind": {
+      "en": "Tall wheat with heavy ears can fall. Do not irrigate just before strong wind.",
+      "hi": "बालियाँ भारी होने पर गेहूँ गिर सकता है। तेज हवा से ठीक पहले सिंचाई न करें।"
+    },
+    "heat": {
+      "en": "Heat at grain filling reduces yield. A light evening irrigation helps.",
+      "hi": "दाना भरते समय गर्मी से उपज घटती है। शाम को हल्की सिंचाई करें।"
+    },
+    "cold": {
+      "en": "A light evening irrigation helps protect wheat from frost.",
+      "hi": "शाम को हल्की सिंचाई से गेहूँ को पाले से बचाने में मदद मिलती है।"
+    },
+    "hail": {
+      "en": "If the crop is ripe, harvest early and keep cut crop under cover.",
+      "hi": "फसल पकी हो तो जल्दी काट लें और कटी फसल ढककर रखें।"
+    },
+    "good": {
+      "en": "Good day for routine wheat work. If the crop is ready, plan irrigation or harvesting according to its growth stage and soil moisture.",
+      "hi": "गेहूँ के सामान्य काम के लिए दिन अच्छा है। फसल तैयार हो तो उसकी अवस्था और मिट्टी की नमी के अनुसार सिंचाई या कटाई की योजना बनाएं।"
+    }
+  },
+  "rice": {
+    "rain": {
+      "en": "Keep bunds strong and drainage open. Do not apply urea just before heavy rain.",
+      "hi": "मेड़ मजबूत रखें और निकासी खुली रखें। भारी बारिश से पहले यूरिया न डालें।"
+    },
+    "dry": {
+      "en": "Keep 2 to 5 cm of water in the field, especially at flowering.",
+      "hi": "खेत में 2 से 5 सेमी पानी बनाए रखें, खासकर फूल आने के समय।"
+    },
+    "wind": {
+      "en": "Drain extra water; standing rice can fall in strong wind.",
+      "hi": "फालतू पानी निकाल दें; तेज हवा में खड़ी धान की फसल गिर सकती है।"
+    },
+    "heat": {
+      "en": "Keep the field moist; do not let it dry out at flowering.",
+      "hi": "खेत में नमी बनाए रखें; फूल आने पर खेत सूखने न दें।"
+    },
+    "cold": {
+      "en": "In the nursery, keep 2 to 3 cm of water at night and drain it in the morning.",
+      "hi": "नर्सरी में रात को 2 से 3 सेमी पानी भरें और सुबह निकाल दें।"
+    },
+    "hail": {
+      "en": "Harvest ripe panicles early if possible.",
+      "hi": "पकी बालियाँ हों तो जल्दी कटाई कर लें।"
+    },
+    "good": {
+      "en": "Good day for rice field work. Check field water level and keep bunds and drainage in good condition.",
+      "hi": "धान के खेत के काम के लिए दिन अच्छा है। खेत में पानी का स्तर जाँचें और मेड़ व जल निकासी ठीक रखें।"
+    }
+  },
+  "maize": {
+    "rain": {
+      "en": "Maize does not tolerate standing water. Drain quickly and make ridges.",
+      "hi": "मक्का जलभराव सहन नहीं करता। पानी जल्दी निकालें और मेड़ें बनाएँ।"
+    },
+    "dry": {
+      "en": "Water matters most at tasseling and silking. Irrigate then.",
+      "hi": "झंडे और रेशे आने की अवस्था में पानी सबसे ज़रूरी है। तब सिंचाई करें।"
+    },
+    "wind": {
+      "en": "Earth up soil around the plants so they do not fall.",
+      "hi": "पौधों के पास मिट्टी चढ़ाएँ ताकि वे गिरें नहीं।"
+    },
+    "heat": {
+      "en": "Irrigate in the evening; heat at silking reduces grain set.",
+      "hi": "शाम को सिंचाई करें; रेशे आने पर गर्मी से दाने कम बनते हैं।"
+    },
+    "cold": {
+      "en": "Delay sowing if frost is expected.",
+      "hi": "पाले की आशंका हो तो बुवाई टाल दें।"
+    },
+    "good": {
+      "en": "Good day for maize work. Check soil moisture and plan irrigation or intercultural work around the crop stage.",
+      "hi": "मक्का के खेत के काम के लिए दिन अच्छा है। मिट्टी की नमी जाँचें और फसल की अवस्था के अनुसार सिंचाई या अन्य काम करें।"
+    }
+  },
+  "soybean": {
+    "rain": {
+      "en": "Soybean is very sensitive to waterlogging. Open drains and do not let water stand.",
+      "hi": "सोयाबीन जलभराव के प्रति बहुत संवेदनशील है। नालियाँ खोलें और पानी न रुकने दें।"
+    },
+    "dry": {
+      "en": "If there is no rain, irrigate at flowering and pod filling.",
+      "hi": "बारिश न हो तो फूल आने और फली भरने पर सिंचाई करें।"
+    },
+    "wind": {
+      "en": "Do not spray; tall plants may fall.",
+      "hi": "छिड़काव न करें; लंबे पौधे गिर सकते हैं।"
+    },
+    "heat": {
+      "en": "Give light irrigation; heat at flowering causes flower drop.",
+      "hi": "हल्की सिंचाई करें; फूल आने पर गर्मी से फूल झड़ते हैं।"
+    },
+    "hail": {
+      "en": "Check pods after hail; harvest early if mature.",
+      "hi": "ओले के बाद फलियाँ जाँचें; पकी हों तो जल्दी काट लें।"
+    },
+    "good": {
+      "en": "Good day for soybean work. Keep the field weed-free and check soil moisture, especially near flowering and pod filling.",
+      "hi": "सोयाबीन के काम के लिए दिन अच्छा है। खेत को खरपतवार से साफ रखें और खासकर फूल व फली भरने की अवस्था में मिट्टी की नमी जाँचें।"
+    }
+  },
+  "cotton": {
+    "rain": {
+      "en": "Drain standing water quickly; cotton roots suffer within a day or two.",
+      "hi": "खड़ा पानी जल्दी निकालें; कपास की जड़ें एक-दो दिन में खराब होने लगती हैं।"
+    },
+    "dry": {
+      "en": "Irrigate at flowering and boll formation.",
+      "hi": "फूल आने और घेटे (बॉल) बनने पर सिंचाई करें।"
+    },
+    "wind": {
+      "en": "Support young plants and do not spray in wind.",
+      "hi": "छोटे पौधों को सहारा दें और तेज हवा में छिड़काव न करें।"
+    },
+    "heat": {
+      "en": "Irrigate in the evening to reduce flower and boll drop.",
+      "hi": "फूल और घेटे झड़ने से बचाने के लिए शाम को सिंचाई करें।"
+    },
+    "hail": {
+      "en": "Hail can damage bolls. Check the crop after the storm.",
+      "hi": "ओलों से घेटे खराब हो सकते हैं। तूफ़ान के बाद फसल जाँचें।"
+    },
+    "good": {
+      "en": "Good day for cotton field work. Inspect plants for pests and check soil moisture before irrigation.",
+      "hi": "कपास के खेत के काम के लिए दिन अच्छा है। पौधों में कीटों की जाँच करें और सिंचाई से पहले मिट्टी की नमी देखें।"
+    }
+  },
+  "sugarcane": {
+    "rain": {
+      "en": "Open drains; standing water harms cane roots.",
+      "hi": "नालियाँ खोलें; खड़ा पानी गन्ने की जड़ों को नुकसान पहुँचाता है।"
+    },
+    "dry": {
+      "en": "Irrigate regularly and cover the soil with cane trash to save moisture.",
+      "hi": "नियमित सिंचाई करें और नमी बचाने के लिए गन्ने की पत्तियों से मल्चिंग करें।"
+    },
+    "wind": {
+      "en": "Tie tall cane in bundles and prop it before strong wind.",
+      "hi": "तेज हवा से पहले लंबे गन्ने को बाँधकर सहारा दें।"
+    },
+    "heat": {
+      "en": "Irrigate in the evening.",
+      "hi": "शाम को सिंचाई करें।"
+    },
+    "cold": {
+      "en": "A light irrigation helps protect young cane shoots from frost.",
+      "hi": "हल्की सिंचाई से गन्ने के नए कल्लों को पाले से बचाने में मदद मिलती है।"
+    },
+    "good": {
+      "en": "Good day for sugarcane work. Check soil moisture, drainage and young shoots; irrigate according to crop need.",
+      "hi": "गन्ने के खेत के काम के लिए दिन अच्छा है। मिट्टी की नमी, जल निकासी और नए कल्लों की जाँच करें तथा जरूरत के अनुसार सिंचाई करें।"
+    }
+  },
+  "pulses": {
+    "rain": {
+      "en": "Pulses die quickly in waterlogging. Drain the field at once.",
+      "hi": "दलहन फसल जलभराव में जल्दी नष्ट होती है। खेत का पानी तुरंत निकालें।"
+    },
+    "dry": {
+      "en": "Give a light irrigation at flowering and pod filling.",
+      "hi": "फूल आने और फली भरने पर हल्की सिंचाई करें।"
+    },
+    "heat": {
+      "en": "Irrigate lightly; heat at flowering reduces pod set.",
+      "hi": "हल्की सिंचाई करें; फूल आने पर गर्मी से फलियाँ कम लगती हैं।"
+    },
+    "cold": {
+      "en": "Frost harms flowering pulses. A light evening irrigation helps.",
+      "hi": "फूल वाली दलहन को पाला नुकसान करता है। शाम की हल्की सिंचाई मदद करती है।"
+    },
+    "hail": {
+      "en": "Harvest mature pods early.",
+      "hi": "पकी फलियाँ जल्दी काट लें।"
+    },
+    "good": {
+      "en": "Good day for pulse crop work. Check flowering or pod-filling stages and keep the field free of standing water.",
+      "hi": "दलहन फसल के काम के लिए दिन अच्छा है। फूल और फली भरने की अवस्था जाँचें और खेत में पानी जमा न होने दें।"
+    }
+  },
+  "vegetables": {
+    "rain": {
+      "en": "Grow on raised beds and open drains. Do not spray before rain.",
+      "hi": "ऊँची क्यारियों में लगाएँ और नालियाँ खोलें। बारिश से पहले छिड़काव न करें।"
+    },
+    "dry": {
+      "en": "Irrigate lightly and often, and use mulch.",
+      "hi": "हल्की सिंचाई बार-बार करें और मल्चिंग करें।"
+    },
+    "wind": {
+      "en": "Stake climbers and tomato plants; cover the nursery.",
+      "hi": "बेल वाली सब्जियों और टमाटर को सहारा दें; नर्सरी ढकें।"
+    },
+    "heat": {
+      "en": "Put shade net or straw over the nursery; irrigate in the evening.",
+      "hi": "नर्सरी पर छायादार जाली या पुआल डालें; शाम को सिंचाई करें।"
+    },
+    "cold": {
+      "en": "Cover the nursery and tender vegetables with straw or plastic at night.",
+      "hi": "रात में नर्सरी और कोमल सब्जियों को पुआल या प्लास्टिक से ढकें।"
+    },
+    "hail": {
+      "en": "Cover beds with net and pick ripe produce early.",
+      "hi": "क्यारियों पर जाली डालें और पकी सब्जियाँ जल्दी तोड़ लें।"
+    },
+    "good": {
+      "en": "Good day for vegetable work. Check soil moisture, inspect plants for pests and harvest mature produce on time.",
+      "hi": "सब्जियों के काम के लिए दिन अच्छा है। मिट्टी की नमी जाँचें, पौधों में कीट देखें और तैयार सब्जियों की समय पर तुड़ाई करें।"
+    }
+  }
+}

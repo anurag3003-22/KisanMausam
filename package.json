@@ -1,0 +1,35 @@
+{
+  "name": "kisanmausam",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "i18next": "^25.10.10",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-i18next": "^15.7.4",
+    "react-is": "^19.2.0",
+    "react-leaflet": "^5.0.0",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/leaflet": "^1.9.20",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "~5.9.3",
+    "vite": "^6.4.3",
+    "vitest": "^3.2.0"
+  }
+}
