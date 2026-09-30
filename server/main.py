@@ -24,6 +24,9 @@ log = logging.getLogger("kisanmausam")
 app = FastAPI(title="KisanMausam API", version="2.0")
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=[
+        "https://kisan-mausam.netlify.app",
+    ],
     allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
