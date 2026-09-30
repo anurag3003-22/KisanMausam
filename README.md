@@ -68,7 +68,7 @@ The Groq key stays on the Python server and is never sent to the React app.
 1. Open `server/.env`.
 2. Set `GROQ_API_KEY=your_groq_key`.
 3. Keep `GROQ_MODEL=openai/gpt-oss-20b` unless you have a reason to change it.
-4. Keep the Google Weather API key configured because it remains the source of live weather data.
+4. No weather API key is required: live weather comes from Open-Meteo.
 5. Restart the backend after changing `.env`.
 
 Groq receives the selected crop, live weather, forecast, and deterministic weather risks.

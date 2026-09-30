@@ -2,7 +2,7 @@
 AI-powered agricultural advisory engine.
 
 Architecture:
-    Google Weather API
+    Open-Meteo Weather API
             ↓
       normalized forecast
             ↓
