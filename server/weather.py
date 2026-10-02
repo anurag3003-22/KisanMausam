@@ -200,16 +200,13 @@ def normalize_daily(raw):
 
 
 async def _fetch_open_meteo_weather(lat, lng):
-    """Fetch the primary forecast and, independently, a second model for confidence."""
-    primary_task = _open_meteo_get(
-        lat, lng, model=PRIMARY_MODEL, include_hourly=True
-    )
-    second_task = _open_meteo_get(
-        lat, lng, model=SECOND_MODEL, include_hourly=False
-    )
+    """Fetch the primary Open-Meteo forecast."""
 
-    primary_raw, second_raw = await asyncio.gather(
-        primary_task, second_task, return_exceptions=True
+    primary_raw = await _open_meteo_get(
+        lat,
+        lng,
+        model=PRIMARY_MODEL,
+        include_hourly=True,
     )
 
     if isinstance(primary_raw, Exception):
@@ -221,17 +218,10 @@ async def _fetch_open_meteo_weather(lat, lng):
     if not daily and not hourly:
         raise ValueError("Open-Meteo returned an empty forecast")
 
-    second_daily = []
-    if not isinstance(second_raw, Exception):
-        try:
-            second_daily = normalize_daily(second_raw)
-        except Exception as exc:
-            log.warning("Second Open-Meteo model normalization failed: %s", exc)
-
     return {
         "daily": daily,
         "hourly": hourly,
-        "second_daily": second_daily,
+        "second_daily": [],
         "elevation": num(primary_raw.get("elevation")),
         "utc_offset_seconds": int(primary_raw.get("utc_offset_seconds") or 0),
         "timezone": primary_raw.get("timezone"),
