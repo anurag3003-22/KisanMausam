@@ -25,7 +25,7 @@ OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 PRIMARY_MODEL = "best_match"
 SECOND_MODEL = "ecmwf_ifs025"
 
-TTL_SECONDS = 1800
+TTL_SECONDS = 21600  # 6 hours; reduces repeated Open-Meteo API calls
 _fresh = TTLCache(maxsize=4096, ttl=TTL_SECONDS)
 _last_good = LRUCache(maxsize=4096)
 
@@ -209,9 +209,6 @@ async def _fetch_open_meteo_weather(lat, lng):
         include_hourly=True,
     )
 
-    if isinstance(primary_raw, Exception):
-        raise primary_raw
-
     daily = normalize_daily(primary_raw)
     hourly = normalize_hourly(primary_raw)
 
@@ -229,26 +226,48 @@ async def _fetch_open_meteo_weather(lat, lng):
 
 
 async def get_norm(lat, lng, model=None, light=False):
-    """Return (normalized_data, stale), using a 30-minute cache and last-good fallback."""
-    key = ("open-meteo", round(float(lat), 4), round(float(lng), 4))
+    """Return normalized data using a long-lived cache and last-good fallback.
+
+    Weather forecasts do not need to be fetched on every page refresh.
+    Coordinates are rounded to 2 decimal places so nearby requests can
+    reuse the same cached forecast, which greatly reduces Open-Meteo usage.
+    """
+
+    # ~1 km grid. Nearby users/locations reuse the same forecast.
+    key = ("open-meteo", round(float(lat), 2), round(float(lng), 2))
 
     if key in _fresh:
+        log.info("Serving cached Open-Meteo weather for %s", key)
         return _fresh[key], False
 
     try:
         data = await _fetch_open_meteo_weather(lat, lng)
+
         if not data["daily"] and not data["hourly"]:
             raise ValueError("empty Open-Meteo forecast")
 
         _fresh[key] = data
         _last_good[key] = data
+
         return data, False
 
     except Exception as exc:
-        log.warning("Open-Meteo fetch failed for %s: %s: %s", key, type(exc).__name__, exc)
+        log.warning(
+            "Open-Meteo fetch failed for %s: %s: %s",
+            key,
+            type(exc).__name__,
+            exc,
+        )
+
+        # If Open-Meteo is temporarily unavailable/rate-limited,
+        # serve the most recent successful forecast for this location.
         if key in _last_good:
-            log.warning("Serving last known good Open-Meteo weather for %s", key)
+            log.warning(
+                "Serving last known good Open-Meteo weather for %s",
+                key,
+            )
             return _last_good[key], True
+
         raise WeatherUnavailable(type(exc).__name__) from exc
 
 
